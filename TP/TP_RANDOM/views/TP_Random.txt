@@ -1,0 +1,53 @@
+/*
+
+1. Déclarer un tableau simple $places contenant la liste des places disponible dans la salle et alimenter chaque élément du tableau par Place_X
+	Il y a 16 places dans la salle donc -> Place_1,....Place_16
+
+2. Déclarer un tableau simple $listeStag avec la liste des stagiaires.
+
+"Janello Morgan"
+"Ngo Mbenock Wilfried"
+"Mansouri Karim"
+"Yigitoglu Romy-robyn"
+"Muong Panharith"
+"FLEURY Jean-Pierre"
+"Bhewa Assia"
+"Salhi Rayan"
+"Mehhat Mohir"
+"NZIENGUI ATEBA Fidel"
+"Cordoba Bonvin David"
+"NGO Thi Thuy Duong"
+"Merroune Mehdi"
+"Chtioui Siham"
+"Camara Aïssé"
+"Debaer Samuel"
+
+3. Écrire une fonction genererPlacement(array $places, array $listeStag):array qui retourne un tableau associatif de 16 éléments.
+	Cette fonction prend en paramètre deux tableaux (la liste des places disponibles et la liste des stagiaires).
+	La fonction devra générer un tableau associatif ("Place_X" => "John Doe") ou les places sont attribuer aléatoirement.
+	La fonction shuffle() permet de mélanger un tableau.
+	
+	
+4. Écrire une fonction sauvegarderPlacement($tabPlacement):void qui prend en paramètre le tableau associatif généré par la fonction précédente
+	et qui le sauvegarde dans un fichier nommé : save_'datetime'.csv
+	
+5. 	Créer un fichier functions.php qui va contenir vos fonctions
+	Créer un fichier traitement.php qui inclut le fichier de fonction et qui contient le traitement.
+	"le traitement fonctionnel doit être isolé des fonctions"
+	
+6. Créer une Interface graphique en HTML,CSS,JS dans laquelle les données seront affichés.
+	L'objectif étant de cartographier la salle de classe pour positionner chaque stagiaire à sa place.
+	Une belle interface est attendu.
+	Utiliser le tableau de session "$_session" pour envoyer vos données vers le front.
+	
+7. Voici l'arborescence de vos fichiers
+			Views  :
+				index.html
+			ctrl   :
+				traitement.php
+				Rep sauvegarde :
+						fichiers_sauvegardés save_'datetime'.csv
+			modele :
+				functions.php
+			
+*/	
